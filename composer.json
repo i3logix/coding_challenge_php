@@ -1,0 +1,21 @@
+{
+  "name": "i3logix/coding_challenge_php",
+  "description": "Coding challenge for i3logix PHP Interview",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "David Stockton",
+      "email": "dstockton@i3logix.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "7.3.5"
+  },
+  "scripts": {
+    "phpunit": "phpunit --verbose --colors=always",
+    "test": [
+      "@phpunit"
+    ]
+  }
+}
