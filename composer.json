@@ -14,7 +14,16 @@
   },
   "scripts": {
     "phpunit": "phpunit --verbose --colors=always",
-    "test": [
+    "test-gol": [
+      "phpunit --verbose --colors=always test/GameOfLifeTest.php"
+    ],
+    "test-poker": [
+      "phpunit --verbose --colors=always test/PokerHandTest.php"
+    ],
+    "test-number": [
+      "phpunit --verbose --colors=always test/NumberWordsTest.php"
+    ],
+    "test-all": [
       "@phpunit"
     ]
   }
