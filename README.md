@@ -28,6 +28,7 @@ Please feel free (and encouraged) to use unit tests to solve the challenge. Plea
 Feel free (and encouraged) to use any built-in PHP functionality to solve these challenges, especially new features in PHP 7.0-7.2. 
 
 # The Game of Life
+<details>
 
 To run the provided tests, run `composer test-gol`.
 
@@ -64,8 +65,10 @@ Will have a subsequent generation of:
 0 1 0 0 0
 0 0 0 0 0
 ```
+</details>
 
 # Ranking Poker Hands
+<details>
 
 To run the provided tests, run `composer test-poker`.
 
@@ -79,8 +82,10 @@ Hand: Ah As 10c 7d 6s (Pair of Aces)
 Hand: Kh Kc 3s 3h 2d (2 Pair)
 
 Hand: Kh Qh 6h 2h 9h (Flush)
+</details>
 
 # Converting a Number to a String
+<details>
 
 To run the provided tests, run `composer test-number`.
 
@@ -96,3 +101,4 @@ Example:
 
 Convert 2523.04
 to "Two thousand five hundred twenty-three and 04/100 dollars"
+</details>
