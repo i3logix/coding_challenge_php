@@ -20,11 +20,18 @@
     "test-poker": [
       "phpunit --verbose --colors=always test/PokerHandTest.php"
     ],
-    "test-number": [
+    "test-check": [
       "phpunit --verbose --colors=always test/NumberWordsTest.php"
     ],
     "test-all": [
       "@phpunit"
     ]
+  },
+  "autoload": {
+    "psr-4": {
+      "CheckWriter\\": "src/CheckWriter",
+      "GameOfLife\\": "src/GameOfLife",
+      "PokerHand\\": "src/PokerHand"
+    }
   }
 }
