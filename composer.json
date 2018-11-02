@@ -21,7 +21,7 @@
       "phpunit --verbose --colors=always test/PokerHandTest.php"
     ],
     "test-check": [
-      "phpunit --verbose --colors=always test/NumberWordsTest.php"
+      "phpunit --verbose --colors=always test/CheckWriterTest.php"
     ],
     "test-all": [
       "@phpunit"
