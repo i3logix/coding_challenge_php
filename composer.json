@@ -14,8 +14,24 @@
   },
   "scripts": {
     "phpunit": "phpunit --verbose --colors=always",
-    "test": [
+    "test-gol": [
+      "phpunit --verbose --colors=always test/GameOfLifeTest.php"
+    ],
+    "test-poker": [
+      "phpunit --verbose --colors=always test/PokerHandTest.php"
+    ],
+    "test-check": [
+      "phpunit --verbose --colors=always test/CheckWriterTest.php"
+    ],
+    "test-all": [
       "@phpunit"
     ]
+  },
+  "autoload": {
+    "psr-4": {
+      "CheckWriter\\": "src/CheckWriter",
+      "GameOfLife\\": "src/GameOfLife",
+      "PokerHand\\": "src/PokerHand"
+    }
   }
 }
