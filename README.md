@@ -20,7 +20,6 @@ This repository includes a `composer.json` file which will install PHPUnit. [If 
 
 - `composer test-gol` (Runs tests for all the **The Game of Life** challenge)
 - `composer test-poker` (Runs tests for all the **Ranking Poker Hands** challenge)
-- `composer test-check` (Runs tests for all the **Converting a Number to a String for Writing a Check** challenge)
 
 Please be sure all included unit tests are passing before you submit your solution.
 
@@ -94,24 +93,4 @@ It should handle the following hand ranks:
 * One Pair
 * High Card
 
-</details>
-
-# Converting a Number to a String for Writing a Check
-<details>
-
-To run the provided tests, run `composer test-check`.
-
-Write code that will accept a number and convert it to the
-appropriate string representation for a check.
-
-Basic Requirements:
-
-* Represent numbers to the hundredth position (pennies)
-* Represent numbers at least to $999,999,999,999.99
-
-
-Example:
-
-Convert 2523.04
-to "Two thousand five hundred twenty-three and 04/100 dollars"
 </details>
