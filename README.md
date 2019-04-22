@@ -34,10 +34,10 @@ life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). The input will be 
 
 The code should take this board and create a new board for the
 next generation based on the following rules:
-1) Any live cell with fewer than two live neighbours dies (underpopulation)
-2) Any live cell with two or three live neighbours lives on to
+1) Any live cell with fewer than two live neighbors dies (underpopulation)
+2) Any live cell with two or three live neighbors lives on to
 the next generation (survival)
-3) Any live cell with more than three live neighbours dies
+3) Any live cell with more than three live neighbors dies
 (overcrowding)
 4) Any dead cell with exactly three live neighbors becomes a
 live cell (reproduction)
