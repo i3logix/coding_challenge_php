@@ -1,0 +1,13 @@
+version: "3"
+services:
+  gol:
+    build: .
+
+  # composer:
+  #   restart: 'no'
+  #   container_name: composer
+  #   image: composer:latest
+  #   working_dir: /app
+  #   command: composer install -d /app
+  #   volumes:
+  #   - ./:/app
