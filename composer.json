@@ -17,17 +17,16 @@
     "test-gol": [
       "phpunit --verbose --colors=always test/GameOfLifeTest.php"
     ],
-    "test-poker": [
-      "phpunit --verbose --colors=always test/PokerHandTest.php"
-    ],
     "test-all": [
       "@phpunit"
+    ],
+    "test-simple": [
+      "phpunit --testdox --colors=always"
     ]
   },
   "autoload": {
     "psr-4": {
-      "GameOfLife\\": "src/GameOfLife",
-      "PokerHand\\": "src/PokerHand"
+      "GameOfLife\\": "src/GameOfLife"
     }
   }
 }

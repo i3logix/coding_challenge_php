@@ -108,6 +108,9 @@ EOBOTTOM;
         $this->assertEquals($bottomWindow, $game->displayWindow([0, 2], [5, 5]));
     }
 
+    /**
+     * @test
+     */
     public function itCanSimulateTheReadmeExample()
     {
         $example       =<<<EOEXAMPLEBOARD
@@ -132,5 +135,50 @@ EOEXAMPLERESULT;
         $this->assertEquals($exampleResult, $game->displayWindow([0, 0], [4, 4]));
     }
 
-    // TODO: More tests go here
+    /**
+     * @test
+     */
+    public function itConvertsBoardStringToArray()
+    {
+
+        $block = <<<EOBLOCK
+1 1 0
+1 1 0
+0 0 0
+EOBLOCK;
+
+        $game = new GameOfLife($block);
+        $blockArray = array(
+                array(1,1,0),
+                array(1,1,0),
+                array(0,0,0)
+        );
+        $this->assertEquals($blockArray, $game->getBoard());
+    }
+
+    /**
+     * @test
+     */
+    public function itMutatesTheBoard()
+    {
+
+        $block = <<<EOBLOCK
+0 0 0 0
+0 1 1 1
+1 1 1 0
+0 0 0 0
+EOBLOCK;
+
+$exampleResult =<<<EOEXAMPLERESULT
+0 0 1 0
+1 0 0 1
+1 0 0 1
+0 1 0 0
+EOEXAMPLERESULT;
+
+        $game = new GameOfLife($block);
+        $game->next();
+
+        $this->assertEquals($exampleResult, $game->getBoard(true));
+    }
 }
